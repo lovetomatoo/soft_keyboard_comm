@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_barrage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/border_top_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <!--
+            <CheckBox
+                    android:id="@+id/check_emoji_keyborad"
+                    style="@style/NormalRadioStyle"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/btn_check_ver_emoji_selector" />
+                    -->
+            <ImageView
+                android:id="@+id/iv_switch"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:padding="10dp"
+                android:src="@drawable/btn_check_ver_emoji_selector" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1">
+
+                <EditText
+                        android:id="@+id/edt_thelive_commenting"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:background="@drawable/edt_send_commenting_shape"
+                        android:gravity="center_vertical"
+                        android:hint="和主播说点什么…"
+                        android:imeOptions="actionSend|flagNoExtractUi"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="45dp"
+                        android:textColor="#FF4C4C4C"
+                        android:textColorHint="#FF878787"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/send_danmu"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/selector_ic_hor_send_danmu" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_thelive_gift"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:padding="8.5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_zhibojian_shu_liwu" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/ver_emoji_containner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
